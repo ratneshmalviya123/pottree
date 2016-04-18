@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+    <definition name="base.definition"
+        template="/WEB-INF/jsp/layout.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/jsp/menu.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="utilsHeader" value="/WEB-INF/jsp/topPanel.jsp"/>
+        <put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+    </definition>
+    
+    <definition name="success" extends="base.definition">
+		<put-attribute name="title" value="Success"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/Sucess.jsp"></put-attribute>
+	</definition>
+ 
+    <definition name="contact" extends="base.definition">
+        <put-attribute name="title" value="Contact Manager" />
+        <put-attribute name="body" value="/WEB-INF/jsp/contact.jsp" />
+    </definition>
+    
+    <definition name="hello" extends="base.definition">
+        <put-attribute name="title" value="Hello" />
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/hello.jsp" />
+    </definition>
+    
+    <definition name="productCategory" extends="base.definition">
+        <put-attribute name="title" value="Product Category" />
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/productCategory.jsp" />
+    </definition>
+    
+    <definition name="newProductCategory" extends="base.definition">
+        <put-attribute name="title" value="Product Category" />
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/newProductCategory.jsp" />
+    </definition>
+    
+    <definition name="lookUpproductCategory" extends="base.definition">
+        <put-attribute name="title" value="Product Category" />
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/lookUpProductCategory.jsp" />
+    </definition>
+    
+    <definition name="manageSuppliers" extends="base.definition">
+        <put-attribute name="title" value="Product Category" />
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/manageSuppliers.jsp" />
+    </definition>
+    
+    <definition name="login" extends="base.definition">
+    	<put-attribute name="title" value="Login"></put-attribute>
+    	<put-attribute name="menu" value=""></put-attribute>
+    	<put-attribute name="utilsHeader" value=""></put-attribute>
+    	<put-attribute name="body" value="/WEB-INF/jsp/admin/login.jsp"></put-attribute>
+    </definition>
+
+	<definition name="indexView" extends="base.definition">
+		<put-attribute name="title" value="Index"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/indexView.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="manageSuppliers" extends="base.definition">
+		<put-attribute name="title" value="Index"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/ManageSuppliers.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="lookupSuppliers" extends="base.definition">
+		<put-attribute name="title" value="Index"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/lookupSuppliers.jsp"></put-attribute>
+	</definition>
+	
+ 
+</tiles-definitions>
